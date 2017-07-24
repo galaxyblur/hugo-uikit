@@ -1,0 +1,30 @@
+<nav class="uk-navbar-container" uk-navbar uk-sticky>
+  <div class="uk-navbar-left">
+    <div id="nav-toggle" class="uk-hidden@m">
+      <span class="uk-navbar-toggle" uk-toggle="target: #nav-offcanvas-slide">
+        <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+      </span>
+    </div>
+    <ul class="uk-navbar-nav uk-visible@m">
+      <li>
+        <a class="uk-logo" href="/#" title="{{.Site.Title}}">
+          {{.Site.Title}}
+        </a>
+      </li>
+      <li><a href="/#section1">Section 1</a></li>
+      <li><a href="/#section2">Section 2</a></li>
+      <li>
+        <a href="/#section3">Section 3 <i class="fa fa-caret-down uk-visible@m" aria-hidden="true"></i></a>
+        <div class="uk-navbar-dropdown">
+          <ul class="uk-nav uk-navbar-dropdown-nav">
+            <li><a href="/#section4">Section 4</a></li>
+            <li><a href="/#section5">Section 5</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="/#section7">Section 6</a></li>
+      <li><a href="#contact" uk-toggle>Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<div id="nav-offcanvas-slide" uk-offcanvas="overlay: true;"><div class="uk-offcanvas-bar"></div></div>

@@ -1,0 +1,21 @@
+{
+  "name": "hugo-uikit",
+  "preferGlobal": true,
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "uikit": "npm run uikit-init && npm run uikit-update",
+    "uikit-init": "cd node_modules/uikit/ && npm install",
+    "uikit-update": "npm run copy-theme-to-uikit && npm run uikit-compile",
+    "copy-theme-to-uikit": "mkdir -p node_modules/uikit/custom && cp -R uikit-themes/${COGS_THEME}* node_modules/uikit/custom/",
+    "uikit-compile": "cd node_modules/uikit/ && npm install && npm run compile"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "jquery": "^3.2.1",
+    "uikit": "^3.0.0-beta.27"
+  }
+}

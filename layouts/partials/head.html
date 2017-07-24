@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>{{.Site.Title}}</title>
+  <meta name="description" content="{{.Site.Params.description}}">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{.Site.Params.cachebuster}}">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png?v={{.Site.Params.cachebuster}}" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png?v={{.Site.Params.cachebuster}}" sizes="16x16">
+  <link rel="manifest" href="/manifest.json?v={{.Site.Params.cachebuster}}">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v={{.Site.Params.cachebuster}}" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon.ico?v={{.Site.Params.cachebuster}}">
+
+  <link rel="stylesheet" href="/node_modules/uikit/dist/css/uikit.min.css?v={{.Site.Params.cachebuster}}">
+  <link rel="stylesheet" href="/css/index.css?v={{.Site.Params.cachebuster}}">
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "{{.Site.Params.group}}",
+      "url": "{{.Site.BaseURL}}",
+      "sameAs": [
+        "{{.Site.Params.facebookURL}}",
+        "{{.Site.Params.yelpURL}}"
+      ]
+    }
+  </script>
+</head>

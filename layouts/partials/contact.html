@@ -1,0 +1,29 @@
+<div id="contact" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body">
+    <h3 class="uk-modal-title">Contact</h3>
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <form class="uk-form-horizontal">
+      <div class="uk-margin">
+        <label for="contact-input-name" class="uk-form-label">Name</label>
+        <div class="uk-form-controls">
+          <input type="text" id="contact-input-name" name="name" class="uk-input" placeholder="Your Name" required aria-describedby="contact-name-help-text">
+        </div>
+      </div>
+      <div class="uk-margin">
+        <label for="contact-input-email" class="uk-form-label">Email Address</label>
+        <div class="uk-form-controls">
+          <input type="email" id="contact-input-email" name="email" class="uk-input" placeholder="customer@example.com" required aria-describedby="contact-email-help-text">
+        </div>
+      </div>
+      <div class="uk-margin">
+        <label for="contact-input-comments" class="uk-form-label">Comments</label>
+        <div class="uk-form-controls">
+          <textarea id="contact-input-comments" name="comments" class="uk-textarea" placeholder="Your comments..." required aria-describedby="contact-comments-help-text"></textarea>
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="text-align-right uk-button uk-button-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
